@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weight converter</title>
+	<link rel="stylesheet" type="text/css" href="weight.css">
+</head>
+<body>
+	<script type="text/javascript">
+		function weightConverter(valNum){
+			document.getElementById("outputKilograms").value=valNum/2.2046;
+			document.getElementById("outputGram").value=valNum/0.00220462;
+		}
+		
+	</script>
+
+	
+	<form>
+		<h1>Weight converter</h1>
+		<label>Pound</label>
+		<input id="inputPounds" type="number" name="text" placeholder="Enter pound" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+		<label>Kilogram:</label>
+		<input id="outputKilograms" type="number" name="text" disabled>
+		<label>Gram:</label>
+		<input id="outputGram" type="number" name="text" disabled>
+	</form>
+
+</body>
+</html>

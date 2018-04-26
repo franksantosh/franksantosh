@@ -1,0 +1,23 @@
+h1{
+	text-align: center;
+	color: #581845;
+
+}
+form{
+	width: 200px;
+	margin: 0 auto;
+	border: 10px groove black;
+	background: #33CAFF;
+
+
+}
+input[type='number']{
+	width: 80%;
+	padding: 10px 10px;
+	margin: 10px;
+	background: #DAF7A6;
+	border-radius: 10px;
+}
+label{
+	margin-left: 13px;
+}
